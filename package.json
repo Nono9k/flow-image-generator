@@ -1,0 +1,14 @@
+{
+  "name": "flow-image-generator",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "typecheck": "wxt prepare && tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "wxt": "^0.20.11"
+  }
+}

@@ -1,0 +1,42 @@
+{
+   "action": {
+      "default_title": "Flow Automation - Auto Flow on Google Flow"
+   },
+   "author": {
+      "email": "kylenguyenaws@gmail.com"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "assets/index.ts-loader-CBrD-M0v.js" ],
+      "matches": [ "*://flow.google.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Auto Flow your prompts at scale. Batch generate and auto-download videos and images on Google Flow.",
+   "host_permissions": [ "*://flow.google.com/*" ],
+   "icons": {
+      "128": "src/assets/logo.png",
+      "16": "src/assets/logo.png",
+      "24": "src/assets/logo.png",
+      "32": "src/assets/logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6Gbmd72Jn+aeG/EYAlPraY3nLe1d73TXx3Uo1dcFVxl6EFQhiEwHpJ3PsXs3E9/pQB5TxoXktLfQhzaSSfs4TIWI2j1dKC+hOUNJHGJ7X7VsJTKo6TY+nqE6Q53MNbwq/FVyNzWrUyHA+6+CmvSQjZSUtHFUNdZ524Ds3R62F99To67BFCOajneGs3Cfmucn5Y1ubfOyH3GfaQ8aJaIMtAF50gzaAXOCR0PEPgXxyApSWM65/nU378hOV/di3YP/ZkEQrN0WmhavmNQdozrJUuvqfNjnKxWHZJ9ISIxIBaUGlw/2fZoj8pUalt5KrtQftLqF+wdiNPl5T2hRszBBAwIDAQAB",
+   "manifest_version": 3,
+   "name": "Flow Automation - Auto Flow on Google Flow",
+   "offline_enabled": true,
+   "permissions": [ "storage", "tabs", "background", "sidePanel", "activeTab", "downloads", "debugger" ],
+   "side_panel": {
+      "default_path": "src/ui/side-panel/index.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.4.4.0",
+   "version_name": "3.4.4",
+   "web_accessible_resources": [ {
+      "matches": [ "*://flow.google.com/*" ],
+      "resources": [ "assets/utils-BCNko0UU.js", "assets/catchUploadFile.ts-DJwIizxX.js", "assets/index.ts-DFAayvhs.js" ],
+      "use_dynamic_url": false
+   } ]
+}

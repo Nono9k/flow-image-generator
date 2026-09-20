@@ -1,0 +1,323 @@
+﻿{
+    "source":  "Live Chrome DevTools accessibility/DOM inspection, 2026-09-12",
+    "observed":  {
+                     "asset_upload":  {
+                                          "element":  "button",
+                                          "role":  "button",
+                                          "accessibleName":  "Upload media",
+                                          "ariaLabel":  null,
+                                          "visibleText":  "Upload media",
+                                          "stableAttributes":  {
+                                                                   "type":  "button",
+                                                                   "mattooltip":  "Upload media"
+                                                               },
+                                          "dataAttributes":  {
+
+                                                             },
+                                          "enabled":  true,
+                                          "context":  "Asset-picker footer",
+                                          "preferredLocator":  "role=button[name=\u0027Upload media\u0027]",
+                                          "fallbackLocators":  [
+                                                                   "button.sidebar-upload-btn",
+                                                                   "button[mattooltip=\u0027Upload media\u0027]"
+                                                               ],
+                                          "verification":  "Observed live; no input[type=file] existed before activation.",
+                                          "appears":  "Asset picker open"
+                                      },
+                     "asset_picker_add":  {
+                                              "element":  "button",
+                                              "role":  "button",
+                                              "accessibleName":  "Add to prompt",
+                                              "ariaLabel":  null,
+                                              "visibleText":  "Add to prompt",
+                                              "stableAttributes":  {
+                                                                       "type":  "button"
+                                                                   },
+                                              "enabled":  true,
+                                              "context":  "Selected asset detail",
+                                              "preferredLocator":  "role=button[name=\u0027Add to prompt\u0027]",
+                                              "fallbackLocators":  [
+                                                                       "button.detail-add-to-prompt-btn"
+                                                                   ],
+                                              "verification":  "Observed with asset option and preview.",
+                                              "appears":  "Asset selected"
+                                          },
+                     "mode_image_video":  {
+                                              "element":  "button",
+                                              "role":  "radio",
+                                              "accessibleNames":  [
+                                                                      "Image",
+                                                                      "Video"
+                                                                  ],
+                                              "visibleText":  [
+                                                                  "Image",
+                                                                  "Video"
+                                                              ],
+                                              "stableAttributes":  {
+                                                                       "role":  "radio",
+                                                                       "type":  "button"
+                                                                   },
+                                              "enabled":  true,
+                                              "context":  "Settings popover Mode group",
+                                              "preferredLocator":  "role=radio[name=\u0027Image\u0027] or role=radio[name=\u0027Video\u0027]",
+                                              "fallbackLocators":  [
+                                                                       "button.mat-button-toggle-button[role=\u0027radio\u0027]"
+                                                                   ],
+                                              "verification":  "Both checked states observed; Video exposed Frames checked and Ingredients.",
+                                              "appears":  "Settings popover"
+                                          },
+                     "aspect_ratio":  {
+                                          "element":  "button",
+                                          "role":  "radio",
+                                          "accessibleNames":  [
+                                                                  "16:9",
+                                                                  "4:3",
+                                                                  "1:1",
+                                                                  "3:4",
+                                                                  "9:16"
+                                                              ],
+                                          "visibleText":  [
+                                                              "16:9",
+                                                              "4:3",
+                                                              "1:1",
+                                                              "3:4",
+                                                              "9:16"
+                                                          ],
+                                          "stableAttributes":  {
+                                                                   "role":  "radio",
+                                                                   "type":  "button"
+                                                               },
+                                          "enabled":  true,
+                                          "context":  "Aspect ratio group; image five values, video 16:9/9:16",
+                                          "preferredLocator":  "role=radio[name=\u002716:9\u0027] scoped to Aspect ratio",
+                                          "fallbackLocators":  [
+                                                                   "button.mat-button-toggle-button[role=\u0027radio\u0027] scoped under Aspect ratio"
+                                                               ],
+                                          "verification":  "16:9 checked in both modes.",
+                                          "appears":  "Settings popover"
+                                      },
+                     "model_selector":  {
+                                            "element":  "button",
+                                            "role":  "button",
+                                            "accessibleName":  "Select model family",
+                                            "ariaLabel":  "Select model family",
+                                            "visibleText":  "Current family text plus arrow_drop_down",
+                                            "stableAttributes":  {
+                                                                     "aria-haspopup":  "menu",
+                                                                     "aria-expanded":  "false|true",
+                                                                     "aria-controls":  "runtime mat-menu-panel-*"
+                                                                 },
+                                            "dataAttributes":  {
+
+                                                               },
+                                            "enabled":  true,
+                                            "context":  "Settings popover; menu is a sibling overlay",
+                                            "preferredLocator":  "role=button[name=\u0027Select model family\u0027]",
+                                            "fallbackLocators":  [
+                                                                     "button[aria-label=\u0027Select model family\u0027]",
+                                                                     "button.mat-menu-trigger within settings popover"
+                                                                 ],
+                                            "verification":  "Opening exposes a role=menu whose role=menuitem children are scoped to that overlay; do not use runtime menu id.",
+                                            "appears":  "Settings popover",
+                                            "observedOptions":  {
+                                                                    "image":  [
+                                                                                  "ðŸŒ Nano Banana Pro",
+                                                                                  "ðŸŒ Nano Banana 2",
+                                                                                  "ðŸŒ Nano Banana 2 Lite"
+                                                                              ],
+                                                                    "video":  [
+                                                                                  "Omni 1.1 Flash",
+                                                                                  "Veo 3.1 - Lite",
+                                                                                  "Veo 3.1 - Fast",
+                                                                                  "Veo 3.1 - Quality"
+                                                                              ]
+                                                                },
+                                            "uncertainty":  "Video menu was previously observed after switching to Video; current image menu was directly re-opened this pass."
+                                        },
+                     "output_count":  {
+                                          "element":  "button",
+                                          "role":  "radio",
+                                          "accessibleNames":  [
+                                                                  "x1",
+                                                                  "x2",
+                                                                  "x3",
+                                                                  "x4"
+                                                              ],
+                                          "visibleText":  [
+                                                              "x1",
+                                                              "x2",
+                                                              "x3",
+                                                              "x4"
+                                                          ],
+                                          "stableAttributes":  {
+                                                                   "role":  "radio",
+                                                                   "type":  "button"
+                                                               },
+                                          "enabled":  true,
+                                          "context":  "Output count group",
+                                          "preferredLocator":  "role=radio[name=\u0027x1\u0027] scoped to Output count",
+                                          "fallbackLocators":  [
+                                                                   "button.mat-button-toggle-button[role=\u0027radio\u0027] scoped under Output count"
+                                                               ],
+                                          "verification":  "All values observed; video x1 checked, image snapshot x2 checked; credits 0 image/10 video.",
+                                          "appears":  "Settings popover"
+                                      },
+                     "start_generation":  {
+                                              "element":  "button",
+                                              "role":  "button",
+                                              "accessibleName":  "Start generation",
+                                              "ariaLabel":  "Start generation",
+                                              "visibleText":  "arrow_forward (icon only)",
+                                              "stableAttributes":  {
+                                                                       "type":  "submit",
+                                                                       "disabled":  "present when invalid"
+                                                                   },
+                                              "dataAttributes":  {
+
+                                                                 },
+                                              "enabled":  false,
+                                              "context":  "Composer submit-controls inside base-prompt-box; adjacent generic settings trigger",
+                                              "preferredLocator":  "role=button[name=\u0027Start generation\u0027] scoped to composer",
+                                              "fallbackLocators":  [
+                                                                       "button[aria-label=\u0027Start generation\u0027][type=\u0027submit\u0027]",
+                                                                       ".base-prompt-box .generate-icon-button[type=\u0027submit\u0027]"
+                                                                   ],
+                                              "verification":  "With empty contenteditable prompt, button has disabled attribute, disabled property true, and nearby description Prompt must be provided. After typing temporary harmless validation probe into the composer contenteditable, disabled attribute/property cleared. Prompt was then cleared and disabled returned. Never click for verification.",
+                                              "validationConditionsObserved":  "Non-empty composer prompt text enables it; empty prompt disables it. No claim about credits, mode, assets, or other validation because those combinations were not submitted.",
+                                              "appears":  "Composer"
+                                          },
+                     "upload_input":  {
+                                          "element":  "input",
+                                          "role":  null,
+                                          "accessibleName":  null,
+                                          "ariaLabel":  null,
+                                          "visibleText":  "none (display:none)",
+                                          "stableAttributes":  {
+                                                                   "type":  "file",
+                                                                   "accept":  ".png,.jpg,.jpeg,.webp,.gif,.heif,.heic,.mp4,.m4v,.mov,.3gp,.avi",
+                                                                   "multiple":  "true",
+                                                                   "style":  "display: none;"
+                                                               },
+                                          "dataAttributes":  {
+
+                                                             },
+                                          "enabled":  true,
+                                          "context":  "Document body; dynamically inserted by Upload media activation",
+                                          "preferredLocator":  "input[type=\u0027file\u0027][multiple][accept*=\u0027.png\u0027] appearing after role=button[name=\u0027Upload media\u0027] activation",
+                                          "fallbackLocators":  [
+                                                                   "input[type=\u0027file\u0027][accept*=\u0027.mp4\u0027]"
+                                                               ],
+                                          "verification":  "Zero before picker/open; one hidden body-level input after Upload media click. Wait for DOM insertion; do not assume startup input. Removal/reuse after chooser cancellation/completion not verified.",
+                                          "appears":  "Only after Upload media is clicked inside asset picker"
+                                      },
+                     "completed_asset_editor":  {
+                                                    "element":  "image plus editor controls",
+                                                    "role":  "image",
+                                                    "accessibleName":  "Tile displaying a user\u0027s image",
+                                                    "ariaLabel":  null,
+                                                    "visibleText":  "Flow UI map verification prompt",
+                                                    "enabled":  true,
+                                                    "context":  "Existing asset opened /edit/\u003cid\u003e; editor actions include Show asset info, Download media, Show history, Done editing",
+                                                    "preferredLocator":  "role=image[name=\"Tile displaying a user\u0027s image\"]",
+                                                    "fallbackLocators":  [
+                                                                             "img[alt=\"Tile displaying a user\u0027s image\"]"
+                                                                         ],
+                                                    "verification":  "Existing completed asset only, not newly submitted job.",
+                                                    "appears":  "Existing asset opened"
+                                                },
+                     "generation_lifecycle":  {
+                                                  "element":  "flow-image-tile job/result tile",
+                                                  "role":  "generic/component (no exposed role)",
+                                                  "accessibleName":  null,
+                                                  "ariaLabel":  null,
+                                                  "visibleText":  "0% during running; then result tile footer title Red apple on white background",
+                                                  "stableAttributes":  {
+                                                                           "componentTag":  "flow-image-tile",
+                                                                           "failureClass":  "error-tile"
+                                                                       },
+                                                  "dataAttributes":  {
+
+                                                                     },
+                                                  "enabled":  true,
+                                                  "context":  "New flow-image-tile appears at index 0 after submission in this project view (DOM order was prepended, not appended); same element retained through 0% to completed image result",
+                                                  "preferredLocator":  "flow-image-tile subtree containing /^\\d+%$/ or .error-title",
+                                                  "fallbackLocators":  [
+                                                                           "text /^\\d+%$/ scoped to newly appended tile",
+                                                                           "flow-image-tile .error-title",
+                                                                           "role=button[name=Retry] scoped to tile"
+                                                                       ],
+                                                  "beforeSubmitEvidence":  {
+                                                                               "timestamp":  "2026-09-12T16:43:51Z",
+                                                                               "prompt":  "A single red apple on a white background",
+                                                                               "startControl":  "button role=button accessibleName=Start generation type=submit enabled",
+                                                                               "existingFlowImageTileCount":  1,
+                                                                               "existingTileOrder":  [
+                                                                                                         "flow-image-tile[data-media-id=360ab36e-804d-4e2d-b8c9-f0d66e9f850a]"
+                                                                                                     ],
+                                                                               "composer":  "contenteditable=true.ProseMirror text A single red apple on a white background"
+                                                                           },
+                                                  "immediatePostSubmitEvidence":  "New job tile exposed StaticText 0% and exact prompt; composer became empty and Start generation became disabled.",
+                                                  "inProgressEvidence":  {
+                                                                             "statusValues":  [
+                                                                                                  "0%"
+                                                                                              ],
+                                                                             "preferredLocator":  "flow-image-tile subtree element matching /^\\d+%$/",
+                                                                             "waitCondition":  "Wait for percentage insertion or text mutation; running while percentage exists",
+                                                                             "cancelRetryObserved":  false
+                                                                         },
+                                                  "terminalEvidence":  {
+                                                                           "status":  "Failed",
+                                                                           "message":  "This generation might violate our policies. Please try a different prompt or send feedback.",
+                                                                           "disclaimer":  "You have not been charged for this generation.",
+                                                                           "terminalMarkup":  "flow-image-tile \u003e .container \u003e flow-error-tile \u003e .error-tile; .error-title; buttons Retry, Reuse prompt, Delete",
+                                                                           "runningIndicator":  "No percentage remained",
+                                                                           "successNotObserved":  true
+                                                                       },
+                                                  "correlation":  {
+                                                                      "method":  "Track newly appended flow-image-tile containing exact submitted prompt",
+                                                                      "stableRelationship":  "Main-content sibling retains prompt through transitions",
+                                                                      "reliable":  "Reliable for isolated run by retaining the newly created element; this run was inserted at DOM index 0. No request ID exposed; data-media-id appears only after success. Concurrent identical prompts remain unproven"
+                                                                  },
+                                                  "appears":  "After Start generation submission",
+                                                  "successEvidence":  {
+                                                                          "status":  "Completed image result",
+                                                                          "sameTile":  "flow-image-tile at DOM index 0, containing exact submitted prompt in associated batch metadata/footer",
+                                                                          "runningIndicator":  "No element in the same tile matched /^\\d+%$/ after completion",
+                                                                          "resultMedia":  {
+                                                                                              "element":  "img",
+                                                                                              "role":  "image (implicit)",
+                                                                                              "accessibleName":  "Tile displaying a user\u0027s image",
+                                                                                              "ariaLabel":  null,
+                                                                                              "stableAttributes":  {
+                                                                                                                       "alt":  "Tile displaying a user\u0027s image",
+                                                                                                                       "class":  "image",
+                                                                                                                       "data-media-id":  "408cdfbd-0c10-4635-9dc0-f0a02a94ce9c",
+                                                                                                                       "draggable":  "false",
+                                                                                                                       "style":  "aspect-ratio: 1.77778 / 1"
+                                                                                                                   }
+                                                                                          },
+                                                                          "customComponents":  [
+                                                                                                   "flow-image-tile",
+                                                                                                   "flow-image-hotbar",
+                                                                                                   "flow-hotbar-container",
+                                                                                                   "flow-tile-hover-footer"
+                                                                                               ],
+                                                                          "resultControls":  [
+                                                                                                 "button[aria-label=Favorite]",
+                                                                                                 "button[aria-label=Reuse prompt]",
+                                                                                                 "button[aria-label=More options]"
+                                                                                             ],
+                                                                          "promptAssociation":  "Yes: batch metadata generic accessible name and visible footer-title Red apple on white background; StaticText exact prompt also appeared in batch metadata",
+                                                                          "explicitCompletionText":  "No explicit Completed/Success status text observed",
+                                                                          "terminalCondition":  "SUCCESS verified as no /^\\d+%$/ running indicator in the tracked tile AND img[data-media-id] result exists AND .error-title is absent"
+                                                                      }
+                                              }
+                 },
+    "unverified":  [
+                       "Successful image/start-frame upload and exact input removal/reuse after chooser cancellation/completion",
+                       "Separate Generate/Create alias (none observed; Start generation is the mapped submit control)",
+                       "Cancel control during generation (none appeared)",
+                       "Whether model availability changes with account/rollout or mode combinations",
+                       "Concurrent generation correlation and identical prompts"
+                   ]
+}
