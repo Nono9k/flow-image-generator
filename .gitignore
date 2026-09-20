@@ -1,6 +1,9 @@
 node_modules/
 .wxt/
 .output/
+.opencode/
+Refrences/
+knowledge/
 
 *.log
 .DS_Store

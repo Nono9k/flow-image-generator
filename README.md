@@ -120,8 +120,6 @@ src/flow/generate-one.ts     Flow controls and generation lifecycle
 src/flow/ingredient.ts       Project asset scanning and attachment
 src/download.ts              Filename and download path handling
 src/types.ts                 Shared queue and result types
-docs/current-status.md       Detailed implementation status and verification notes
-knowledge/                   Flow behavior and UI research snapshots
 ```
 
 ## Permissions and Data Handling
